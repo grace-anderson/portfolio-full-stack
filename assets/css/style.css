@@ -1,0 +1,392 @@
+/* update with google font */
+:root {
+  --dark: #1a1a1a;
+  --light: #fff;
+  --blue: #163359;
+  --light-blue: #8b99ac;
+  --bright-green: #96a61f;
+  --pink: #f26b6b;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+}
+
+/*mobile first*/
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* opening page transition */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.col-custom {
+  /* transition when resizing */
+  transition: flex-basis 500ms linear;
+}
+
+.contact-container {
+  min-height: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.navbar-expand-md {
+  background: var(--light);
+}
+
+.navbar-light-custom {
+  background-color: var(--light);
+}
+
+.bg-light-custom {
+  background-color: var(--light);
+}
+
+.bg-light-blue-custom {
+  background-color: var(--light-blue);
+}
+
+.bg-blue-custom {
+  background-color: var(--blue);
+}
+
+.container-custom {
+  text-align: center;
+}
+
+img#corporate-img {
+  border-radius: 50%;
+  z-index: 5;
+  max-width: 60%;
+  /* transition when resizing */
+  transition: all 0.5s ease-in-out;
+}
+
+i {
+  font-size: 1.6em;
+  color: var(--blue);
+  /* transition when resizing */
+  transition: all 0.5s ease-in-out;
+}
+
+a i {
+  transition: all 0.3s linear;
+}
+
+.card-text a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.card-text a:hover {
+  color: var(--bright-green);
+  font-weight: 500;
+}
+
+.card-text a:focus {
+  color: var(--bright-green);
+  font-weight: 500;
+}
+
+.bi:hover {
+  color: var(--pink);
+}
+
+.link-primary-custom {
+  color: var(--pink);
+}
+
+.link-primary-custom:hover {
+  color: var(--blue);
+}
+
+.link-primary-custom:focus {
+  color: var(--blue);
+}
+
+.btn.btn-primary-custom {
+  background-color: var(--pink);
+  color: var(--light);
+}
+
+.btn.btn-primary-custom:focus {
+  background-color: var(--blue);
+  border-color: var(--light-blue);
+  box-shadow: 0 0 0 0.25rem rgb(69 92 122 / 50%);
+}
+
+.btn.btn-primary-custom:hover {
+  background-color: var(--blue);
+  border-color: var(--light-blue);
+  box-shadow: 0 0 0 0.25rem rgb(69 92 122 / 50%);
+}
+
+.btn.btn-secondary-custom {
+  background-color: var(--blue);
+  color: var(--light);
+}
+
+.btn.btn-secondary-custom:focus {
+  background-color: var(--pink);
+  border-color: var(--bright-green);
+  box-shadow: 0 0 0 0.25rem rgb(150 166 31 / 50%);
+}
+
+.btn.btn-secondary-custom:hover {
+  background-color: var(--pink);
+  border-color: var(--bright-green);
+  box-shadow: 0 0 0 0.25rem rgb(150 166 31 / 50%);
+}
+
+#contact-page-link {
+  cursor: pointer;
+}
+
+.text-blue-custom {
+  color: var(--blue);
+}
+
+.section-project-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 2rem auto;
+  width: 90%;
+  transition: flex-basis 1s linear;
+}
+
+.card-custom {
+  flex: 0 1 auto;
+  align-self: center;
+  border: none;
+  width: 80%;
+  /* resizing transition */
+  transition: all 0.5s ease-in-out;
+}
+
+.card-title-custom {
+  color: var(--pink);
+}
+
+footer i {
+  font-size: 3rem;
+  overflow: hidden;
+}
+
+/* animation */
+
+#bubbles {
+  height: 100%;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.bubble {
+  width: 60px;
+  height: 60px;
+  border-radius: 200px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.x1 {
+  left: 25%;
+  bottom: 1%;
+  transform: scale(4);
+  opacity: 0.1;
+  background: var(--pink);
+  z-index: -1;
+  animation: moveclouds 21s linear infinite,
+    sideWays 3s ease-in-out infinite alternate;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.x2 {
+  left: 50%;
+  bottom: 1%;
+  transform: scale(3);
+  opacity: 0.1;
+  background: var(--blue);
+  z-index: -1;
+  animation: moveclouds 20s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.x3 {
+  left: 75%;
+  bottom: 1%;
+  transform: scale(2);
+  opacity: 0.1;
+  background: var(--bright-green);
+  z-index: -1;
+  animation: moveclouds 25s linear infinite,
+    sideWays 5s ease-in-out infinite alternate;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes moveclouds {
+  0% {
+    top: 1500px;
+    left: 25%;
+    margin-left: 0;
+  }
+  100% {
+    left: calc(25% + 50px);
+    top: -500px;
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 80px;
+  }
+}
+
+/* sm layout */
+@media (min-width: 576px) {
+  img#corporate-img {
+    border-radius: 50%;
+    z-index: 5;
+    max-width: 80%;
+  }
+
+  i {
+    font-size: 2em;
+  }
+
+  .card-custom {
+    width: 60%;
+  }
+
+  /* animation*/
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 240px;
+    }
+  }
+}
+
+/* md layout */
+@media (min-width: 768px) {
+  img#corporate-img {
+    border-radius: 50%;
+    z-index: 5;
+    max-width: 60%;
+  }
+
+  .h2-align {
+    margin-left: -8px;
+  }
+
+  /* animation*/
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 360px;
+    }
+  }
+}
+
+/* lg layout */
+@media (min-width: 992px) {
+  .card-custom {
+    width: 30%;
+  }
+
+  /* animation */
+  .x1 {
+    left: calc(80% + 100px);
+    transform: scale(7);
+    animation: moveclouds 98s linear infinite,
+      sideWays 14s ease-in-out infinite alternate;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .x2 {
+    transform: scale(5);
+    opacity: 0.1;
+    animation: moveclouds 40s linear infinite,
+      sideWays 16s ease-in-out infinite alternate;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .x3 {
+    transform: scale(3);
+    animation: moveclouds 50s linear infinite,
+      sideWays 10s ease-in-out infinite alternate;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 420px;
+    }
+  }
+}
+
+/* xl layout */
+@media (min-width: 1200px) {
+  .icons {
+    display: none;
+  }
+
+  .contact-icon {
+    font-size: 4 em;
+  }
+
+  /* animation */
+
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 560px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  img#corporate-img {
+    border-radius: 50%;
+    z-index: 5;
+    max-width: 40%;
+  }
+
+/* animation */
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 800px;
+    }
+  }
+}

@@ -42,6 +42,11 @@ body {
   margin: 0 auto;
 }
 
+.container-fluid-custom {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .navbar-expand-md {
   background: var(--light);
 }
@@ -85,27 +90,25 @@ i {
   transform: translate(-50%, 0); 
 }
 
-/* a i {
-  transition: all 0.3s linear;
-} */
-
 .bi:hover {
   color: var(--red);
   font-size: 3.4rem;
 }
 
 .card-text a {
-  color: var(--dark);
+  color: var(--red);
   text-decoration: none;
 }
 
 .card-text a:hover {
-  color: var(--bright-green);
+  color: var(--light);
+  background-color: var(--red);
   font-weight: 500;
 }
 
 .card-text a:focus {
-  color: var(--bright-green);
+  color: var(--light);
+  background-color: var(--red);
   font-weight: 500;
 }
 

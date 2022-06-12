@@ -53,7 +53,12 @@
                 <a class="nav-link" href="./index.html">Home</a>
               </li>
               <li id="resume-page-link" class="nav-item">
-                <a class="nav-link" href="./assets/docs/HelenAnderson_CV_developer_20220414.pdf" target="_blank">Resumé</a>
+                <a
+                  class="nav-link"
+                  href="./assets/docs/HelenAnderson_CV_developer_20220414.pdf"
+                  target="_blank"
+                  >Resumé</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -65,10 +70,29 @@
                   >Projects</a
                 >
                 <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                  <li><a class="dropdown-item" href="https://grace-anderson.github.io/marvel-superhero-genie/" target="_blank">Marvel Superhero Genie</a></li>
-                  <li><a class="dropdown-item" href="https://grace-anderson.github.io/weather-dashboard/" target="_blank">Weather Dashboard</a></li>
                   <li>
-                    <a class="dropdown-item" href="https://grace-anderson.github.io/work-day-scheduler/" target="_blank">Work Day Scheduler</a>
+                    <a
+                      class="dropdown-item"
+                      href="https://grace-anderson.github.io/marvel-superhero-genie/"
+                      target="_blank"
+                      >Marvel Superhero Genie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://grace-anderson.github.io/weather-dashboard/"
+                      target="_blank"
+                      >Weather Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://grace-anderson.github.io/work-day-scheduler/"
+                      target="_blank"
+                      >Work Day Scheduler</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -85,10 +109,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col mt-5">
+        <div class="col">
           <address>
             <ul class="list-unstyled">
-              <li class="pb-3">
+              <li class="pb-1">
                 <h5>
                   Phone:
                   <a
@@ -98,7 +122,7 @@
                   >
                 </h5>
               </li>
-              <li class="pb-3">
+              <li>
                 <h5>
                   Email:
                   <a
@@ -112,29 +136,33 @@
           </address>
         </div>
       </div>
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col-2">
-          <a href="https://github.com/grace-anderson" target="_blank">
-            <i
-              class="contact-icon bi bi-github img-fluid"
-              role="img"
-              aria-label="GitHub"
-            ></i>
-          </a>
+      <div class="container d-flex justify-content-center">
+        <div class="row mb-5 gx-5">
+          <div class="col-6 px-5">
+            <a href="https://github.com/grace-anderson" target="_blank">
+              <i
+                class="contact-icon bi bi-github img-fluid"
+                role="img"
+                aria-label="GitHub"
+              ></i>
+            </a>
+          </div>
+          <div class="col-6 px-5">
+            <a
+              href="https://www.linkedin.com/in/helenganderson/"
+              target="_blank"
+            >
+              <i
+                class="contact-icon bi bi-linkedin img-fluid"
+                role="img"
+                aria-label="LinkedIn"
+              ></i>
+            </a>
+          </div>
+          <div class="col-4 col-custom"></div>
         </div>
-        <div class="col-2">
-          <a href="https://www.linkedin.com/in/helenganderson/" target="_blank">
-            <i
-              class="contact-icon bi bi-linkedin img-fluid"
-              role="img"
-              aria-label="LinkedIn"
-            ></i>
-          </a>
-        </div>
-        <div class="col-4 col-custom"></div>
       </div>
-      <div class="row">
+      <div class="row mt-5">
         <div class="col col-custom">
           <button
             id="go-home-button"
@@ -157,9 +185,12 @@
         </div>
       </div>
     </main>
-    <footer class="footer mt-auto mt-5 pb-5 py-3 bg-light-blue-custom text-center">
+    <!-- footer -->
+    <footer
+      class="footer mt-auto mt-5 pb-5 py-3 bg-light-pink-custom text-center"
+    >
       <div class="container container-fluid">
-        <div class="row">
+        <div class="row my-3">
           <div class="col-3 col-custom">
             <a href="https://github.com/grace-anderson" target="_blank">
               <i
@@ -193,8 +224,15 @@
         </div>
         <div class="row mt-3">
           <div class="col col-custom pt1">
-            <h6 class="text-blue-custom">&copy;Helen G. Anderson 2022</h6>
+            <h6 class="text-dark-green-custom mt-1">
+              &copy;Helen G. Anderson 2022
+            </h6>
           </div>
+        </div>
+        <div class="row" id="bubbles">
+          <div class="col bubble x1"></div>
+          <div class="col bubble x2"></div>
+          <div class="col bubble x3"></div>
         </div>
       </div>
     </footer>

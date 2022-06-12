@@ -1,11 +1,12 @@
-/* update with google font */
+/* colours and google font */
 :root {
   --dark: #1a1a1a;
   --light: #fff;
-  --blue: #163359;
-  --light-blue: #8b99ac;
-  --bright-green: #96a61f;
-  --pink: #f26b6b;
+  --purple: #612B5B;
+  --light-pink: #C7A8A7;
+  --bright-green: #929432;
+  --dark-green: #616E4C;
+  --red: #943532;
 }
 
 * {
@@ -53,12 +54,12 @@ body {
   background-color: var(--light);
 }
 
-.bg-light-blue-custom {
-  background-color: var(--light-blue);
+.bg-light-pink-custom {
+  background-color: var(--light-pink);
 }
 
-.bg-blue-custom {
-  background-color: var(--blue);
+.bg-dark-green-custom {
+  background-color: var(--dark-green);
 }
 
 .container-custom {
@@ -75,13 +76,22 @@ img#corporate-img {
 
 i {
   font-size: 1.6em;
-  color: var(--blue);
+  color: var(--dark-green);
   /* transition when resizing */
   transition: all 0.5s ease-in-out;
+  position: absolute;
+  z-index: 9;
+  left: 50%; 
+  transform: translate(-50%, 0); 
 }
 
-a i {
+/* a i {
   transition: all 0.3s linear;
+} */
+
+.bi:hover {
+  color: var(--red);
+  font-size: 3.4rem;
 }
 
 .card-text a {
@@ -99,62 +109,74 @@ a i {
   font-weight: 500;
 }
 
-.bi:hover {
-  color: var(--pink);
-}
 
 .link-primary-custom {
-  color: var(--pink);
+  color: var(--red);
 }
 
 .link-primary-custom:hover {
-  color: var(--blue);
+  color: var(--dark-green);
 }
 
 .link-primary-custom:focus {
-  color: var(--blue);
+  color: var(--dark-green);
 }
 
 .btn.btn-primary-custom {
-  background-color: var(--pink);
+  background-color: var(--red);
   color: var(--light);
 }
 
 .btn.btn-primary-custom:focus {
-  background-color: var(--blue);
-  border-color: var(--light-blue);
+  background-color: var(--dark-green);
+  border-color: var(--bright-green);
   box-shadow: 0 0 0 0.25rem rgb(69 92 122 / 50%);
 }
 
 .btn.btn-primary-custom:hover {
-  background-color: var(--blue);
-  border-color: var(--light-blue);
+  background-color: var(--dark-green);
+  border-color: var(--bright-green);
   box-shadow: 0 0 0 0.25rem rgb(69 92 122 / 50%);
 }
 
 .btn.btn-secondary-custom {
-  background-color: var(--blue);
+  background-color: var(--dark-green);
   color: var(--light);
+  z-index: 9;
 }
 
 .btn.btn-secondary-custom:focus {
-  background-color: var(--pink);
+  background-color: var(--red);
   border-color: var(--bright-green);
   box-shadow: 0 0 0 0.25rem rgb(150 166 31 / 50%);
+  transition: all 0.5s ease-in-out;
 }
 
 .btn.btn-secondary-custom:hover {
-  background-color: var(--pink);
+  background-color: var(--red);
   border-color: var(--bright-green);
   box-shadow: 0 0 0 0.25rem rgb(150 166 31 / 50%);
+  transition: all 0.5s ease-in-out;
+}
+
+#download-resume:focus {
+  font-size: 1.3rem;
+  transition: all 0.5s ease-in-out;
+  z-index: 9;
+}
+
+#download-resume:hover {
+  font-size: 1.3rem;
+  transition: all 0.5s ease-in-out;
+  z-index: 9;
 }
 
 #contact-page-link {
   cursor: pointer;
 }
 
-.text-blue-custom {
-  color: var(--blue);
+.text-dark-green-custom {
+  color: var(--dark-green);
 }
 
 .section-project-cards {
@@ -177,7 +199,7 @@ a i {
 }
 
 .card-title-custom {
-  color: var(--pink);
+  color: var(--red);
 }
 
 footer i {
@@ -206,7 +228,7 @@ footer i {
   bottom: 1%;
   transform: scale(4);
   opacity: 0.1;
-  background: var(--pink);
+  background: var(--red);
   z-index: -1;
   animation: moveclouds 21s linear infinite,
     sideWays 3s ease-in-out infinite alternate;
@@ -219,7 +241,7 @@ footer i {
   bottom: 1%;
   transform: scale(3);
   opacity: 0.1;
-  background: var(--blue);
+  background: var(--purple);
   z-index: -1;
   animation: moveclouds 20s linear infinite,
     sideWays 4s ease-in-out infinite alternate;

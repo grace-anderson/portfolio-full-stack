@@ -112,7 +112,6 @@ i {
   font-weight: 500;
 }
 
-
 .link-primary-custom {
   color: var(--red);
 }
@@ -192,13 +191,10 @@ i {
   transition: flex-basis 1s linear;
 }
 
-.card-custom {
-  flex: 0 1 auto;
-  align-self: center;
-  border: none;
-  width: 80%;
-  /* resizing transition */
-  transition: all 0.5s ease-in-out;
+.img-size {
+  margin: auto;
+  max-width: 80%;
+  object-fit: contain;
 }
 
 .card-title-custom {
@@ -298,8 +294,8 @@ footer i {
     font-size: 2em;
   }
 
-  .card-custom {
-    width: 60%;
+  .card-text{
+    font-size: 0.8rem;
   }
 
   /* animation*/
@@ -315,6 +311,7 @@ footer i {
 
 /* md layout */
 @media (min-width: 768px) {
+
   img#corporate-img {
     border-radius: 50%;
     z-index: 5;
@@ -323,6 +320,10 @@ footer i {
 
   .h2-align {
     margin-left: -8px;
+  }
+
+  .card-text{
+    font-size: 1rem;
   }
 
   /* animation*/
@@ -338,8 +339,9 @@ footer i {
 
 /* lg layout */
 @media (min-width: 992px) {
-  .card-custom {
-    width: 30%;
+
+  .card-text{
+    font-size: 1rem;
   }
 
   /* animation */

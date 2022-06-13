@@ -1,4 +1,4 @@
-/* colours and google font */
+/* rooot colours and font */
 :root {
   --dark: #1a1a1a;
   --light: #fff;
@@ -14,7 +14,11 @@
   color: var(--dark);
 }
 
-/*mobile first*/
+.text-dark-green-custom {
+  color: var(--dark-green);
+}
+
+/*mobile first - html and body*/
 
 html {
   margin: 0;
@@ -31,9 +35,9 @@ body {
   transition: opacity 0.5s;
 }
 
-.col-custom {
-  /* transition when resizing */
-  transition: flex-basis 500ms linear;
+/* containers and columns */
+.container-custom {
+  text-align: center;
 }
 
 .contact-container {
@@ -42,11 +46,12 @@ body {
   margin: 0 auto;
 }
 
-.container-fluid-custom {
-  padding-left: 0;
-  padding-right: 0;
+.col-custom {
+  /* transition when resizing */
+  transition: flex-basis 500ms linear;
 }
 
+/* navbar */
 .navbar-expand-md {
   background: var(--light);
 }
@@ -55,6 +60,7 @@ body {
   background-color: var(--light);
 }
 
+/* backgrounds */
 .bg-light-custom {
   background-color: var(--light);
 }
@@ -67,10 +73,7 @@ body {
   background-color: var(--dark-green);
 }
 
-.container-custom {
-  text-align: center;
-}
-
+/* images and icons */
 img#corporate-img {
   border-radius: 50%;
   z-index: 5;
@@ -95,6 +98,32 @@ i {
   font-size: 3.4rem;
 }
 
+.img-size {
+  margin: auto;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+footer i {
+  font-size: 3rem;
+  overflow: hidden;
+}
+
+/* cards */
+.section-project-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 2rem auto;
+  width: 90%;
+  transition: flex-basis 1s linear;
+}
+
+.card-title-custom {
+  color: var(--red);
+}
+
 .card-text a {
   color: var(--red);
   text-decoration: none;
@@ -112,6 +141,7 @@ i {
   font-weight: 500;
 }
 
+/* links and buttons */
 .link-primary-custom {
   color: var(--red);
 }
@@ -177,37 +207,7 @@ i {
   cursor: pointer;
 }
 
-.text-dark-green-custom {
-  color: var(--dark-green);
-}
-
-.section-project-cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  margin: 2rem auto;
-  width: 90%;
-  transition: flex-basis 1s linear;
-}
-
-.img-size {
-  margin: auto;
-  max-width: 80%;
-  object-fit: contain;
-}
-
-.card-title-custom {
-  color: var(--red);
-}
-
-footer i {
-  font-size: 3rem;
-  overflow: hidden;
-}
-
 /* animation */
-
 #bubbles {
   height: 100%;
   padding: 100px 0;
@@ -389,7 +389,6 @@ footer i {
   }
 
   /* animation */
-
   @keyframes sideWays {
     0% {
       margin-left: 0px;
